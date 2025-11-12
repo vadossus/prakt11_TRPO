@@ -1,0 +1,60 @@
+﻿<Page x:Class="PacientApp1.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PacientApp1"
+      xmlns:validators="clr-namespace:PacientApp1.ValidationRules"
+      mc:Ignorable="d" 
+      Title="LoginPage">
+
+    <Grid Background="{DynamicResource WindowBackgroundBrush}">
+        <Border Style="{StaticResource LoginBaseBorderStyle}">
+
+            <StackPanel Style="{StaticResource HorizontalStackPanelLogin}">
+                <Label Content="Вход в систему" Style="{StaticResource HeaderLabelStyle}"/>
+
+                <StackPanel Style="{StaticResource HorizontalBaseStackPanel}">
+                    <Label Content="Идентификатор" Style="{StaticResource LoginPageLabel}"/>
+                    <TextBox x:Name="IDTextBox" Style="{StaticResource LoginPageTextBox}">
+                        <TextBox.Text>
+                            <Binding Path="UserId" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <validators:RequiredRule/>
+                                    <validators:IdValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </StackPanel>
+
+                <!--<ItemsControl ItemsSource="{Binding ElementName=IDTextBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorTextStyle}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>-->
+
+                <StackPanel Style="{StaticResource HorizontalBaseStackPanel}">
+                    <Label Content="Пароль" Style="{StaticResource LoginPageLabel}" />
+                    <PasswordBox x:Name="PassBox" Style="{StaticResource BasePasswordBoxStyle}"/>
+                </StackPanel>
+                <ItemsControl x:Name="PasswordErrorItems" Visibility="Collapsed">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" Style="{StaticResource ErrorTextStyle}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <StackPanel Style="{StaticResource VerticalStackPanelLogin}">
+                    <Button x:Name="LoginBtn" Content="Войти"
+                            Style="{StaticResource StandardButtonStyle}" Click="LoginBtn_Click"/>
+                    <Button x:Name="RegisterBtn" Content="Регистрация" 
+                            Style="{StaticResource StandardButtonStyle}" Click="RegisterBtn_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

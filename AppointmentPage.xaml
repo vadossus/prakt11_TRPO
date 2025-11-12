@@ -1,0 +1,134 @@
+﻿<Page x:Class="PacientApp1.AppointmentPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PacientApp1"
+      xmlns:converters="clr-namespace:PacientApp1.Converters"
+      xmlns:validators="clr-namespace:PacientApp1.ValidationRules"
+      mc:Ignorable="d"
+      Title="AppointmentPage" Height="598" Width="869">
+
+    <Page.Resources>
+        <converters:AgeConverter x:Key="ageConverter"/>
+        <converters:DaysSinceLastAppointmentConverter x:Key="daysSinceAppointmentConverter"/>
+        <converters:PhoneFormatConverter x:Key="phoneConverter"/>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto" MinHeight="62"/>
+        </Grid.RowDefinitions>
+
+        <Border Style="{StaticResource BaseBorderStyle}" >
+            <StackPanel>
+                <Label Content="Информация о пациенте" Style="{StaticResource SectionLabelStyle}"/>
+                <StackPanel Style="{StaticResource FormStackPanelStyle}">
+                    <TextBlock Text="ID: "/>
+                    <TextBlock Text="{Binding CurrentPatient.Id}"/>
+                    <TextBlock Text="   ФИО: "/>
+                    <TextBlock Text="{Binding CurrentPatient.LastName}"/>
+                    <TextBlock Text=" "/>
+                    <TextBlock Text="{Binding CurrentPatient.Name}"/>
+                    <TextBlock Text=" "/>
+                    <TextBlock Text="{Binding CurrentPatient.MiddleName}"/>
+                </StackPanel>
+                <StackPanel Style="{StaticResource FormStackPanelStyle}">
+                    <TextBlock Text="Дата рождения: "/>
+                    <TextBlock Text="{Binding CurrentPatient.Birthday}"/>
+                    <TextBlock Text="{Binding CurrentPatient.Birthday, Converter={StaticResource ageConverter}, StringFormat='  Возраст: {0}'}"/>
+                </StackPanel>
+                <StackPanel Style="{StaticResource FormStackPanelStyle}">
+                    <TextBlock Text="{Binding CurrentPatient.PhoneNumber, Converter={StaticResource phoneConverter}, StringFormat='Телефон: {0}'}"/>
+                    <TextBlock Text="{Binding CurrentPatient.AppointmentStories, Converter={StaticResource daysSinceAppointmentConverter}, StringFormat='  Дни с последнего приема: {0}'}"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="1" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="350"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Style="{StaticResource BaseBorderStyle}">
+                <StackPanel>
+                    <Label Content="История приемов" Style="{StaticResource SectionLabelStyle}"/>
+                    <ListView ItemsSource="{Binding CurrentPatient.AppointmentStories}"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              Style="{StaticResource BaseListViewStyle}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Border Style="{StaticResource WhiteBorder}">
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding Date}"/>
+                                        <TextBlock Text="{Binding Diagnosis}" />
+                                        <TextBlock Text="{Binding Recommendations}"/>
+                                        <TextBlock Text="{Binding DoctorName, StringFormat='ФИО врача: {0}'}"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Style="{StaticResource BaseBorderStyle}">
+                <StackPanel>
+                    <Label Content="Новый прием" Style="{StaticResource SectionLabelStyle}"/>
+
+                    <StackPanel>
+                        <Label Content="Диагноз" Style="{StaticResource BaseLabelStyle}"/>
+                        <TextBox x:Name="DiagnosisTextBox" Style="{StaticResource DiagnosisTextBox}">
+                            <TextBox.Text>
+                                <Binding Path="NewAppointment.Diagnosis" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                                    <Binding.ValidationRules>
+                                        <validators:RequiredRule/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+                    </StackPanel>
+
+                    <!--<ItemsControl ItemsSource="{Binding ElementName=DiagnosisTextBox, Path=(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorTextAppoinmentStyle}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>-->
+
+                    <StackPanel>
+                        <Label Content="Рекомендации" Style="{StaticResource BaseLabelStyle}"/>
+                        <TextBox x:Name="RecommendationsTextBox" Style="{StaticResource RecommendationTextBox}">
+                            <TextBox.Text>
+                                <Binding Path="NewAppointment.Recommendations" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                                    <Binding.ValidationRules>
+                                        <validators:RequiredRule/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+                    </StackPanel>
+
+                    <!--<ItemsControl ItemsSource="{Binding ElementName=RecommendationsTextBox, Path=(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorTextAppoinmentStyle}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>-->
+
+                    <Button Content="Сохранить прием" Style="{StaticResource AddButtonStyle}" Click="SaveAppointment_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <StackPanel Grid.Row="2" Style="{StaticResource ButtonPanelStyle}">
+            <Button Content="Изменить информацию о пациенте" Style="{StaticResource StandardButtonStyle}" Click="EditPatient_Click"/>
+            <Button Content="Назад" Style="{StaticResource StandardButtonStyle}" Click="BackBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

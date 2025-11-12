@@ -1,0 +1,135 @@
+﻿<Page x:Class="PacientApp1.EditPatientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PacientApp1"
+      xmlns:validators="clr-namespace:PacientApp1.ValidationRules"
+      mc:Ignorable="d" 
+      Title="EditPatientPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Изменение информации о пациенте" Style="{StaticResource HeaderLabelStyle}"/>
+
+        <ScrollViewer Grid.Row="1" Style="{StaticResource ScrollViewerStyle}">
+            <Border Style="{StaticResource BaseBorderStyle}" >
+                <StackPanel>
+                    <StackPanel Style="{StaticResource FormStackPanelStyle}">
+                        <Label Content="ID пациента" Style="{StaticResource CreatePatientLabel}"/>
+                        <TextBlock Text="{Binding PatientId}" HorizontalAlignment="Center"/>
+                    </StackPanel>
+
+                    <StackPanel Style="{StaticResource FormStackPanelStyle}">
+                        <Label Content="Имя" Style="{StaticResource CreatePatientLabel}"/>
+                        <TextBox x:Name="NameTextBox" Style="{StaticResource RegisterTextBoxStyle}">
+                            <TextBox.Text>
+                                <Binding Path="Name" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                                    <Binding.ValidationRules>
+                                        <validators:RequiredRule/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+                    </StackPanel>
+                    <!--<ItemsControl ItemsSource="{Binding ElementName=NameTextBox, Path=(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorTextStyle}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>-->
+
+                    <StackPanel Style="{StaticResource FormStackPanelStyle}">
+                        <Label Content="Фамилия" Style="{StaticResource CreatePatientLabel}"/>
+                        <TextBox x:Name="LastNameTextBox" Style="{StaticResource RegisterTextBoxStyle}">
+                            <TextBox.Text>
+                                <Binding Path="LastName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                                    <Binding.ValidationRules>
+                                        <validators:RequiredRule/>
+                                        <validators:NameValidationRule/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+                    </StackPanel>
+                    <!--<ItemsControl ItemsSource="{Binding ElementName=LastNameTextBox, Path=(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorTextStyle}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>-->
+
+                    <StackPanel Style="{StaticResource FormStackPanelStyle}">
+                        <Label Content="Отчество" Style="{StaticResource CreatePatientLabel}"/>
+                        <TextBox x:Name="MiddleNameTextBox" Style="{StaticResource RegisterTextBoxStyle}">
+                            <TextBox.Text>
+                                <Binding Path="MiddleName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                                    <Binding.ValidationRules>
+                                        <validators:RequiredRule/>
+                                        <validators:NameValidationRule/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+                    </StackPanel>
+                    <!--<ItemsControl ItemsSource="{Binding ElementName=MiddleNameTextBox, Path=(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorTextStyle}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>-->
+
+                    <StackPanel Style="{StaticResource FormStackPanelStyle}">
+                        <Label Content="Дата рождения" Style="{StaticResource CreatePatientLabel}"/>
+                        <DatePicker x:Name="BirthdayDatePicker" Style="{StaticResource EditPatientDatePicker}">
+                            <DatePicker.SelectedDate>
+                                <Binding Path="Birthday" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                            </DatePicker.SelectedDate>
+                        </DatePicker>
+                    </StackPanel>
+                    <ItemsControl x:Name="DateErrorItems" Visibility="Collapsed">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" Style="{StaticResource ErrorTextStyle}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <StackPanel Style="{StaticResource FormStackPanelStyle}">
+                        <Label Content="Контактный телефон" Style="{StaticResource CreatePatientLabel}"/>
+                        <TextBox x:Name="PhoneTextBox" Style="{StaticResource RegisterTextBoxStyle}">
+                            <TextBox.Text>
+                                <Binding Path="PhoneNumber" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                                    <Binding.ValidationRules>
+                                        <validators:RequiredRule/>
+                                        <validators:PhoneValidationRule/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+                    </StackPanel>
+                    <!--<ItemsControl ItemsSource="{Binding ElementName=PhoneTextBox, Path=(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorTextStyle}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>-->
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="2" Style="{StaticResource ButtonPanelStyle}">
+            <Button Content="Сохранить" Style="{StaticResource AddButtonStyle}" Click="SaveBtn_Click"/>
+            <Button Content="Отмена" Style="{StaticResource StandardButtonStyle}" Click="CancelBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,63 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="PrimaryColor">#F5FAFB</Color>
+    <Color x:Key="PrimaryHoverColor">#005A9E</Color>
+    <Color x:Key="PrimaryPressedColor">#004578</Color>
+
+    <Color x:Key="SuccessColor">#28A745</Color>
+    <Color x:Key="SuccessHoverColor">#218838</Color>
+    <Color x:Key="SuccessPressedColor">#1E7E34</Color>
+
+    <Color x:Key="DangerColor">#E65A4F</Color>
+    <Color x:Key="DangerHoverColor">#C82333</Color>
+    <Color x:Key="DangerPressedColor">#BD2130</Color>
+
+    <Color x:Key="WindowBackground">#FFFFFF</Color>
+    <Color x:Key="TextColor">#212529</Color>
+    <Color x:Key="BorderColor">#DEE2E6</Color>
+
+    <Color x:Key="CBackground">#FFFFFF</Color>
+    <Color x:Key="HeaderText">#2E3B4E</Color>
+
+    <Color x:Key="PrimaryText">#444B54</Color>
+    <Color x:Key="SecondaryText">#6E7A89</Color>
+    <Color x:Key="PrimaryButton">#33B8B1</Color>
+
+    <Color x:Key="InputBackground">#F0F6F8</Color>
+    <Color x:Key="Accent">#3A9AD9</Color>
+    <Color x:Key="EBackground">#FFE8E8</Color>
+    <Color x:Key="EText">#D93025</Color>
+
+    <Color x:Key="TextMenu">#808080</Color>
+
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{DynamicResource PrimaryColor}"/>
+    <SolidColorBrush x:Key="PrimaryHoverBrush" Color="{DynamicResource PrimaryHoverColor}"/>
+    <SolidColorBrush x:Key="PrimaryPressedBrush" Color="{DynamicResource PrimaryPressedColor}"/>
+
+    <SolidColorBrush x:Key="SuccessBrush" Color="{DynamicResource SuccessColor}"/>
+    <SolidColorBrush x:Key="SuccessHoverBrush" Color="{DynamicResource SuccessHoverColor}"/>
+    <SolidColorBrush x:Key="SuccessPressedBrush" Color="{DynamicResource SuccessPressedColor}"/>
+
+    <SolidColorBrush x:Key="DangerBrush" Color="{DynamicResource DangerColor}"/>
+    <SolidColorBrush x:Key="DangerHoverBrush" Color="{DynamicResource DangerHoverColor}"/>
+    <SolidColorBrush x:Key="DangerPressedBrush" Color="{DynamicResource DangerPressedColor}"/>
+
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{DynamicResource WindowBackground}"/>
+    <SolidColorBrush x:Key="TextBrush" Color="{DynamicResource TextColor}"/>
+    <SolidColorBrush x:Key="BorderBrush" Color="{DynamicResource BorderColor}"/>
+
+    <SolidColorBrush x:Key="CBackgroudBrush" Color="{DynamicResource CBackground}"/>
+
+    <SolidColorBrush x:Key="HeaderTextBrush" Color="{DynamicResource HeaderText}"/>
+    <SolidColorBrush x:Key="PrimaryTextBrush" Color="{DynamicResource PrimaryText}"/>
+    <SolidColorBrush x:Key="SecondaryTextBrush" Color="{DynamicResource SecondaryText}"/>
+
+    <SolidColorBrush x:Key="PrimaryButtonBrush" Color="{DynamicResource PrimaryButton}"/>
+    <SolidColorBrush x:Key="InputBackgroundBrush" Color="{DynamicResource InputBackground}"/>
+    <SolidColorBrush x:Key="AccentBrush" Color="{DynamicResource Accent}"/>
+    <SolidColorBrush x:Key="EBackgroundBrush" Color="{DynamicResource EBackground}"/>
+    <SolidColorBrush x:Key="ETextBrush" Color="{DynamicResource EText}"/>
+
+    <SolidColorBrush x:Key="TextMenuBrush" Color="{DynamicResource TextMenu}"/>
+</ResourceDictionary>
