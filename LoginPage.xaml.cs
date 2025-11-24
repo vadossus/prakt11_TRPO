@@ -3,6 +3,8 @@ using System.IO;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace PacientApp1
 {
@@ -14,16 +16,24 @@ namespace PacientApp1
         {
             InitializeComponent();
             DataContext = ViewModel;
+
+            PassBox.PasswordChanged += PassBox_PasswordChanged;
+        }
+
+        private void PassBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            ViewModel.Password = PassBox.Password;
+            HidePasswordError();
         }
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (Validation.GetHasError(IDTextBox))
+            if (Validation.GetHasError(IDTextBox) || string.IsNullOrEmpty(ViewModel.UserId))
             {
                 return;
             }
 
-            if (string.IsNullOrEmpty(PassBox.Password))
+            if (string.IsNullOrEmpty(ViewModel.Password))
             {
                 ShowPasswordError("Введите пароль");
                 return;
@@ -33,7 +43,7 @@ namespace PacientApp1
                 HidePasswordError();
             }
 
-            if (string.IsNullOrEmpty(ViewModel.UserId) || !int.TryParse(ViewModel.UserId, out int userId))
+            if (!int.TryParse(ViewModel.UserId, out int userId))
             {
                 return;
             }
@@ -45,18 +55,25 @@ namespace PacientApp1
                 return;
             }
 
-            string json = File.ReadAllText(fileName);
-            var user = JsonSerializer.Deserialize<Doctor>(json);
-
-            if (user.Password != PassBox.Password)
+            try
             {
-                MessageBox.Show("Неверный пароль");
-                return;
-            }
+                string json = File.ReadAllText(fileName);
+                var user = JsonSerializer.Deserialize<Doctor>(json);
 
-            App.CurrentDoctor = user;
-            App.LoadPatients();
-            NavigationService.Navigate(new MainUserPage());
+                if (user.Password != ViewModel.Password)
+                {
+                    MessageBox.Show("Неверный пароль");
+                    return;
+                }
+
+                App.CurrentDoctor = user;
+                App.LoadPatients();
+                NavigationService.Navigate(new MainUserPage());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при загрузке данных: {ex.Message}");
+            }
         }
 
         private void ShowPasswordError(string errorMessage)
@@ -78,6 +95,7 @@ namespace PacientApp1
 
     public class LoginViewModel
     {
-        public string UserId { get; set; }
+        public string? UserId { get; set; }
+        public string? Password { get; set; }
     }
 }

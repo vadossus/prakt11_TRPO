@@ -90,7 +90,7 @@
         <Setter Property="HorizontalAlignment" Value="Center"/>
     </Style>
 
-    <Style x:Key="BaseListViewItemStyle" TargetType="ListViewItem">
+    <Style x:Key="BaseListViewItemStyle" TargetType="ListViewItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
         <Setter Property="BorderBrush" Value="Transparent"/>

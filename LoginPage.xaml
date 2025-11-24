@@ -43,7 +43,7 @@
                 <ItemsControl x:Name="PasswordErrorItems" Visibility="Collapsed">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding}" Style="{StaticResource ErrorTextStyle}"/>
+                            <TextBlock Text="{Binding Password}" Style="{StaticResource ErrorTextStyle}"/>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>

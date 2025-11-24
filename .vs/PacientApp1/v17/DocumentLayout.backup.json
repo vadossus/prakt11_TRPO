@@ -1,0 +1,272 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\editpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:editpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\appointmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:appointmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\appointmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:appointmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\colors\\whitetheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:colors\\whitetheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\themehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:themehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\ui\\commonstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:ui\\commonstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\ui\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:ui\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\colors\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:colors\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|c:\\users\\vadim\\source\\repos\\prakt11_trpo\\mainuserpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E72ABBE4-0117-48C5-A40B-94094EF2D969}|PacientApp1.csproj|solutionrelative:mainuserpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a5174402-226b-48da-aa5c-91376ed45871}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\RegisterPage.xaml.cs",
+              "RelativeDocumentMoniker": "RegisterPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\RegisterPage.xaml.cs",
+              "RelativeToolTip": "RegisterPage.xaml.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T14:59:52.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "RegisterPage.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\RegisterPage.xaml",
+              "RelativeToolTip": "RegisterPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T14:59:50.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwGQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T06:11:05.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\AppointmentPage.xaml.cs",
+              "RelativeDocumentMoniker": "AppointmentPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\AppointmentPage.xaml.cs",
+              "RelativeToolTip": "AppointmentPage.xaml.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T05:47:28.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "LoginPage.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\LoginPage.xaml",
+              "RelativeToolTip": "LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T06:08:41.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T14:46:37.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppointmentPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\AppointmentPage.xaml",
+              "RelativeDocumentMoniker": "AppointmentPage.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\AppointmentPage.xaml",
+              "RelativeToolTip": "AppointmentPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T05:47:24.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditPatientPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\EditPatientPage.xaml",
+              "RelativeDocumentMoniker": "EditPatientPage.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\EditPatientPage.xaml",
+              "RelativeToolTip": "EditPatientPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T05:47:23.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WhiteTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\Colors\\WhiteTheme.xaml",
+              "RelativeDocumentMoniker": "Colors\\WhiteTheme.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\Colors\\WhiteTheme.xaml",
+              "RelativeToolTip": "Colors\\WhiteTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T05:23:04.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ThemeHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\ThemeHelper.cs",
+              "RelativeDocumentMoniker": "ThemeHelper.cs",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\ThemeHelper.cs",
+              "RelativeToolTip": "ThemeHelper.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T05:22:53.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DarkTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\Colors\\DarkTheme.xaml",
+              "RelativeDocumentMoniker": "Colors\\DarkTheme.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\Colors\\DarkTheme.xaml",
+              "RelativeToolTip": "Colors\\DarkTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T05:20:15.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Button.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\UI\\Button.xaml",
+              "RelativeDocumentMoniker": "UI\\Button.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\UI\\Button.xaml",
+              "RelativeToolTip": "UI\\Button.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T05:19:41.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CommonStyles.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\UI\\CommonStyles.xaml",
+              "RelativeDocumentMoniker": "UI\\CommonStyles.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\UI\\CommonStyles.xaml",
+              "RelativeToolTip": "UI\\CommonStyles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T05:19:15.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainUserPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\MainUserPage.xaml",
+              "RelativeDocumentMoniker": "MainUserPage.xaml",
+              "ToolTip": "C:\\Users\\Vadim\\source\\repos\\prakt11_TRPO\\MainUserPage.xaml",
+              "RelativeToolTip": "MainUserPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T05:18:19.311Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
